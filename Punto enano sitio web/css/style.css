@@ -1,0 +1,298 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family:'Roboto', sans-serif;
+}
+body{
+        background-image: linear-gradient(#f0d1f4, #e988ff);      
+}
+/* Estilos generales banner*/
+.banner-principal{
+    background-image: url(../img/bannerheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+header img{
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+/* Menu general */
+
+.menu-mio{
+    background-color: rgba(0, 0, 0, 0.653);
+}
+.menu-mio-a{
+   color: violet;
+}
+
+/* Home */
+
+.altura-carrusel{
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: rgba(0, 0, 0, 0.281);
+   
+}
+
+.ofertas{
+    text-align: center;
+    background-color: #e988ff;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.titulo-ig{
+    text-align: center;
+    background-color: #e988ff;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Home MOBILE */
+
+@media screen and (max-width:600px) {
+    .altura-carrusel{
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.281);        
+    }
+    .imagen-mobile{
+        width: 100%;
+    }
+    
+} 
+
+.banner{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Productos */
+
+.main-p{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: 5% 30% 30% 30%;
+    row-gap: 1%;
+
+    grid-template-areas: 
+        "hp hp hp"
+        "hc iu id"
+        "hc it ic"
+        "hc ici is";
+}
+.hp{
+    grid-area: hp;
+    background-color: #e988ff;
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+}
+.hc{
+    grid-area: hc;
+    align-self: flex-start;
+    justify-self: center;
+    background-color: rgb(211, 163, 229);
+    color: black;
+    border-color: black;
+    border-style: dotted;
+    height: 50%
+}
+.iu{
+    grid-area: iu;
+    justify-self: center;
+}
+.id{
+    grid-area: id;
+    justify-self: center;
+}
+.it{
+    grid-area: it;
+    justify-self: center;
+}
+.ic{
+    grid-area: ic;
+    justify-self: center;
+}
+.ici{
+    grid-area: ici;
+    justify-self: center;
+}
+.is{
+    grid-area: is;
+    justify-self: center;
+    margin-bottom: 1%;
+}
+/* Productos MOBILE */
+
+@media screen and (max-width:600px){
+    .main-p{  
+        grid-template-columns: 10% 90% ;
+        grid-template-rows: repeat(5, 20%);
+        row-gap: 0.1rem;
+        grid-template-areas: 
+        "hc iu "
+        "hc id "
+        "hc it "
+        "hc ic"
+        "hc ici";
+    }
+    .hc h3{
+        font-size: 1rem;    
+        text-align: center;
+        padding-left: 1.5rem;
+        text-decoration: underline black;
+    }
+    .hc{
+        font-size: 1rem; 
+        margin: 0.5rem;
+    }
+
+    .iu{
+        margin-top: 0.5rem;
+    }
+    .is{
+        display: none;
+    }
+}
+
+/* Como Comprar */
+
+.main-c{ 
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: repeat(4, 0,1fr) ;
+    grid-template-areas: 
+    "titulo-com"
+    "como-comprar"
+    "titulo-ped"
+    "pedido-perso"
+    "titulo-pre"
+    "precio"
+    "texto-c";
+}
+
+.titulo-com{
+    grid-area: titulo-com;
+    text-align: center;
+    background-color: #e988ff;
+    margin-top: 1%;
+}
+.como-comprar{
+    grid-area: como-comprar;
+}
+
+.titulo-ped{
+    grid-area: titulo-ped;
+    text-align: center;
+    background-color: #e988ff;
+    margin-top: 1%;
+}
+.pedido-perso{
+    grid-area: pedido-perso;
+}
+
+.titulo-pre{
+    grid-area: titulo-pre;
+    text-align: center;
+    background-color: #e988ff;
+    margin-top: 1%;
+}
+.precio{
+    grid-area: precio;
+}
+.texto-c{
+    grid-area: texto-c;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-color: black;
+    border-style: dotted;
+}
+   
+/* Quienes somos */
+
+.titulo-somos{
+    margin-top: 1%;
+    text-align: center;
+    background-color: #e988ff;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p-uno{
+    background-color: rgba(213, 223, 232, 0.356);
+    border-style: dotted;
+    border-color: #e988ff;
+    border-radius: 10px;
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.p-dos{
+    background-color: rgba(80, 8, 91, 0.434);
+    border-style: dotted;
+    border-color: #e988ff;
+    border-radius: 10px;
+}
+
+/* Pedidos */
+.titulops{
+    margin-top: 1%;
+    text-align: center;
+    background-color: #e988ff;
+}
+
+.formulariop {
+    margin: auto;
+    text-align: center;
+    background-color: #f0d1f4a3;
+    border-style: dotted;
+    border-color: #e988ff;
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+.titulodonde{
+    margin-top: auto;
+    text-align: center;
+    background-color: #e988ff;
+}
+
+.map{
+    text-align: center;
+}
+
+
+
+/* Footer */
+
+.footer-mio{
+    background-image: url(../img/bannerheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
