@@ -35,10 +35,8 @@ header img{
 /* Home */
 
 .altura-carrusel{
-    padding-left: 25%;
-    padding-right: 25%;
     background-color: rgba(0, 0, 0, 0.281);
-   
+    padding: 10%;
 }
 
 .ofertas{
