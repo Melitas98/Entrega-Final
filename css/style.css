@@ -42,6 +42,47 @@ main {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%; }
+  main .main-p .hp {
+    background-color: #e988ff;
+    width: 100%;
+    text-align: center;
+    margin-top: 1%; }
+  main .main-p .lista-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 1%; }
+    main .main-p .lista-productos .producto:hover {
+      color: #515152;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 2px solid #515152;
+      border-radius: 5px;
+      padding: 5px; }
+      main .main-p .lista-productos .producto:hover img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px; }
+      main .main-p .lista-productos .producto:hover h2 {
+        margin-bottom: 5px; }
+      main .main-p .lista-productos .producto:hover p {
+        font-weight: bold; }
+    main .main-p .lista-productos .producto {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 2px solid #000000;
+      border-radius: 5px;
+      padding: 5px; }
+      main .main-p .lista-productos .producto h2 {
+        text-align: center; }
+      main .main-p .lista-productos .producto p {
+        text-align: center; }
   main .main-c {
     display: grid;
     grid-template-columns: auto;
@@ -138,14 +179,18 @@ main {
     main .carrusel-dos {
       width: 100%; }
     main .imagen-mobile {
-      width: 100%; } }
+      width: 100%; }
+    main .main-p .lista-productos {
+      grid-template-columns: 1fr; } }
   @media screen and (max-width: 600px) {
     main .carrusel-uno {
       width: 100%; }
     main .carrusel-dos {
       display: none; }
     main .imagen-mobile {
-      width: 100%; } }
+      width: 100%; }
+    main .main-p .lista-productos {
+      grid-template-columns: 1fr; } }
 
 /* Footer */
 footer {
@@ -154,6 +199,7 @@ footer {
   background-size: cover;
   color: white; }
   footer .footer-mio {
+    background-color: #00000031;
     display: grid;
     grid-template-columns: repeat(3, 5fr);
     grid-template-rows: 4fr;
