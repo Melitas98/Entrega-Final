@@ -1,0 +1,282 @@
+// Reset
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#f0d1f4, #e988ff);      
+}
+
+/* Header */
+
+.banner-principal{
+    background-image: url(../img/bannerheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    img{
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+    
+    .menu-mio{
+        background-color: rgba(0, 0, 0, 0.653);
+        .menu-mio-a{
+            color: violet;
+        }
+    }
+}
+
+/*Main*/
+
+main{
+    // Home
+    .carrusel{
+        display: flex;
+        margin-top: 1rem;
+        width: 100%;
+        object-fit: cover;
+        justify-content: center;  
+    }
+    section{
+        .titulo-ig{
+            text-align: center;
+            background-color: #e988ff;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        .banner{
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+    }
+    // Productos
+
+    // Como comprar
+    .main-c{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(4, 0,1fr) ;
+        grid-template-areas: 
+        "titulo-com"
+        "como-comprar"
+        "titulo-ped"
+        "pedido-perso"
+        "titulo-pre"
+        "precio"
+        "texto-c";
+        .titulo-com{
+            grid-area: titulo-com;
+            text-align: center;
+            background-color: #e988ff;
+            margin-top: 1%;
+        }
+        .como-comprar{
+            grid-area: como-comprar;
+        }
+        div {
+            .titulo-ped{
+            grid-area: titulo-ped;
+            text-align: center;
+            background-color: #e988ff;
+            margin-top: 1%;
+            }
+        }
+        .pedido-perso{
+            grid-area: pedido-perso;
+        }
+        div{
+            .titulo-pre{
+                grid-area: titulo-pre;
+                text-align: center;
+                background-color: #e988ff;
+                margin-top: 1%;
+            }
+        }
+        .precio{
+            grid-area: precio;
+        }
+        .texto-c{
+            grid-area: texto-c;
+            justify-self: center;
+            align-self: center;
+            background-color: rgba(255, 255, 255, 0.527);
+            margin-bottom: 5px;
+            padding: 5px;
+            border-color: black;
+            border-style: dotted;
+        }
+    }
+    /* Quienes somos */
+    div{
+        .titulo-somos{
+            margin-top: 1%;
+            text-align: center;
+            background-color: #e988ff;
+        }
+        .p{
+            display: flex;
+            flex-direction: column;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            .p-uno{
+                background-color: rgba(213, 223, 232, 0.356);
+                border-style: dotted;
+                border-color: #e988ff;
+                border-radius: 10px;
+                width: 50%;
+                justify-self: center;
+                align-self: center;
+                text-align: center;
+            }
+            .p-dos{
+                background-color: rgba(80, 8, 91, 0.434);
+                border-style: dotted;
+                border-color: #e988ff;
+                border-radius: 10px;
+            }
+        }
+    }
+    /*Pedidos*/
+    .titulops{
+        margin-top: 1%;
+        text-align: center;
+        background-color: #e988ff;
+    }
+    .formulariop {
+        margin: auto;
+        text-align: center;
+        background-color: #f0d1f4a3;
+        border-style: dotted;
+        border-color: #e988ff;
+        width: 50%;
+        border-radius: 10px;
+        fieldset {
+            div{
+                 label {
+                display: inline-block;
+                width: 150px;
+                margin-bottom: 10px;
+              }
+            }
+        }
+    }
+    .titulodonde{
+        margin-top: auto;
+        text-align: center;
+        background-color: #e988ff;
+    }
+    .map{
+        text-align: center;
+    } 
+    
+    /* Media Query*/
+
+    // Pc
+    @media screen and (min-width: 1024px) {
+        .q-somos{
+            height: 500px;
+        } 
+        .p-uno{
+            margin-top: 50px;
+        }
+        .p-dos{
+            margin-top: 50px;
+        }
+    }
+
+    // Tablet
+    @media screen and (max-width: 768px){ 
+    
+        .carrusel{
+            display: inline;
+        }
+        .carrusel-uno{
+            width: 100%;
+        }
+        .carrusel-dos{
+            width: 100%;
+        }
+    
+        .imagen-mobile{
+            width: 100%
+        }
+    
+    }
+
+    // Celular
+    @media screen and (max-width:600px) {
+        .carrusel-uno{
+            width: 100%;
+        }
+        .carrusel-dos{
+            display: none;
+        }
+    
+        .imagen-mobile{
+            width: 100%;
+        }
+        
+    } 
+    
+
+}
+/* Footer */
+
+footer{
+    background-image: url(../img/bannerheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .footer-mio{
+        display: grid;
+        grid-template-columns: repeat(3,  5fr) ;
+        grid-template-rows:  4fr;
+        grid-template-areas: 
+        "contactanos medios-pago redes-sociales";
+        .contactanos{
+            grid-area: contactanos;
+            text-align: center;
+            margin-top: 1fr; 
+            ul li{
+                text-align: start;
+            }
+        }
+        .medios-pago{
+            grid-area: medios-pago;
+            justify-content: center;
+            text-align: center;
+            margin-top: 1fr; 
+        }
+        .redes-sociales{
+            grid-area: redes-sociales;
+            text-align: center;
+            margin-top: 1fr;
+            ul li{
+                text-align: start;
+            }
+        }
+
+        div ul li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .copy{
+        grid-area: copi;
+        background-color: rgba(0, 0, 0, 0.461);
+        text-align: center;
+        margin-top: 0,1fr;
+    }
+}
