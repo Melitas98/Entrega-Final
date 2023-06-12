@@ -1,5 +1,5 @@
-// Reset
 /* Reset */
+
 
 *{
     margin: 0;
@@ -12,6 +12,12 @@ body{
     background-image: linear-gradient(#f0d1f4, #e988ff);      
 }
 
+// IMPORT
+
+@import "../scss/utilidades/variables";
+@mixin mixin-mio {
+    color: white;
+}
 /* Header */
 
 .banner-principal{
@@ -47,7 +53,7 @@ main{
     section{
         .titulo-ig{
             text-align: center;
-            background-color: #e988ff;
+            background-color: $color-titulos;
             margin-top: 1%;
             margin-bottom: 1%;
         }
@@ -61,7 +67,7 @@ main{
     
     .main-p{
         .hp{
-            background-color: #e988ff;
+            background-color: $color-titulos;
             width: 100%;
             text-align: center;
             margin-top: 1%;
@@ -74,13 +80,9 @@ main{
             margin-bottom: 1%;
             .producto:hover {   
                 color: rgb(81, 81, 82);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                border: 2px solid rgb(81, 81, 82);
-                border-radius: 5px;
-                padding: 5px;
+                .producto:hover {
+                    @extend .producto;
+                }
                 img {
                     width: 100%;
                     height: auto;
@@ -129,7 +131,7 @@ main{
         .titulo-com{
             grid-area: titulo-com;
             text-align: center;
-            background-color: #e988ff;
+            background-color: $color-titulos;
             margin-top: 1%;
         }
         .como-comprar{
@@ -139,7 +141,7 @@ main{
             .titulo-ped{
             grid-area: titulo-ped;
             text-align: center;
-            background-color: #e988ff;
+            background-color: $color-titulos;
             margin-top: 1%;
             }
         }
@@ -150,7 +152,7 @@ main{
             .titulo-pre{
                 grid-area: titulo-pre;
                 text-align: center;
-                background-color: #e988ff;
+                background-color: $color-titulos;
                 margin-top: 1%;
             }
         }
@@ -173,7 +175,7 @@ main{
         .titulo-somos{
             margin-top: 1%;
             text-align: center;
-            background-color: #e988ff;
+            background-color: $color-titulos;
         }
         .p{
             display: flex;
@@ -184,7 +186,7 @@ main{
             .p-uno{
                 background-color: rgba(213, 223, 232, 0.356);
                 border-style: dotted;
-                border-color: #e988ff;
+                border-color: $color-titulos;
                 border-radius: 10px;
                 width: 50%;
                 justify-self: center;
@@ -194,7 +196,7 @@ main{
             .p-dos{
                 background-color: rgba(80, 8, 91, 0.434);
                 border-style: dotted;
-                border-color: #e988ff;
+                border-color: $color-titulos;
                 border-radius: 10px;
             }
         }
@@ -203,14 +205,14 @@ main{
     .titulops{
         margin-top: 1%;
         text-align: center;
-        background-color: #e988ff;
+        background-color: $color-titulos;
     }
     .formulariop {
         margin: auto;
         text-align: center;
         background-color: #f0d1f4a3;
         border-style: dotted;
-        border-color: #e988ff;
+        border-color: $color-titulos;
         width: 50%;
         border-radius: 10px;
         fieldset {
@@ -226,7 +228,7 @@ main{
     .titulodonde{
         margin-top: auto;
         text-align: center;
-        background-color: #e988ff;
+        background-color: $color-titulos;
     }
     .map{
         text-align: center;
@@ -293,7 +295,7 @@ footer{
     background-image: url(../img/bannerheader.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    @include mixin-mio;
     .footer-mio{
         background-color: #00000031;
         display: grid;
@@ -328,7 +330,7 @@ footer{
             list-style: none;
             a{
                 text-decoration: none;
-                color: white;
+                @import mixin-mio
             }
         }
     }
