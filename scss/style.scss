@@ -330,7 +330,7 @@ footer{
             list-style: none;
             a{
                 text-decoration: none;
-                @import mixin-mio
+                @include mixin-mio;
             }
         }
     }
