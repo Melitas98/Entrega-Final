@@ -234,60 +234,6 @@ main{
         text-align: center;
     } 
     
-    /* Media Query*/
-
-    // Pc
-    @media screen and (min-width: 1024px) {
-        .q-somos{
-            height: 500px;
-        } 
-        .p-uno{
-            margin-top: 50px;
-        }
-        .p-dos{
-            margin-top: 50px;
-        }
-    }
-
-    // Tablet
-    @media screen and (max-width: 768px){ 
-    
-        .carrusel{
-            display: inline;
-        }
-        .carrusel-uno{
-            width: 100%;
-        }
-        .carrusel-dos{
-            width: 100%;
-        }
-    
-        .imagen-mobile{
-            width: 100%
-        }
-        .main-p .lista-productos {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    // Celular
-    @media screen and (max-width:600px) {
-        .carrusel-uno{
-            width: 100%;
-        }
-        .carrusel-dos{
-            display: none;
-        }
-    
-        .imagen-mobile{
-            width: 100%;
-        }
-        .main-p .lista-productos {
-            grid-template-columns: 1fr;
-        }
-    } 
-    
-
 }
 /* Footer */
 
@@ -341,3 +287,58 @@ footer{
         margin-top: 0,1fr;
     }
 }
+    /* Media Query*/
+
+    // Pc
+    @media screen and (min-width: 1024px) {
+        .q-somos{
+            height: 500px;
+        } 
+        .p-uno{
+            margin-top: 50px;
+        }
+        .p-dos{
+            margin-top: 50px;
+        }
+    }
+
+    // Tablet
+    @media screen and (max-width: 768px){ 
+    
+        .carrusel{
+            display: inline;
+        }
+        .carrusel-uno{
+            width: 100%;
+        }
+        .carrusel-dos{
+            width: 100%;
+        }
+    
+        .imagen-mobile{
+            width: 100%
+        }
+        .main-p .lista-productos {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // Celular
+    @media screen and (max-width:600px) {
+        .carrusel-uno{
+            width: 100%;
+        }
+        .carrusel-dos{
+            display: none;
+        }
+    
+        .imagen-mobile{
+            width: 100%;
+        }
+        .main-p .lista-productos {
+            grid-template-columns: 1fr;
+        }
+        .footer-mio{
+            width: 100%;
+        }
+    }
