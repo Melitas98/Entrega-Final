@@ -401,8 +401,10 @@ footer{
         footer{
             width: 100%;
             background-size: cover;
-            .footer-mio .contactanos, .medios-pago, .redes-sociales{
-                width: fit-content;
+            .footer-mio {
+                .contactanos, .medios-pago, .redes-sociales{
+                    font-size: 0%;
+                }
             }
         }        
         

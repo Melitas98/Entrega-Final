@@ -278,5 +278,5 @@ footer {
   footer {
     width: 100%;
     background-size: cover; }
-    footer .footer-mio .contactanos, footer .medios-pago, footer .redes-sociales {
-      width: fit-content; } }
+    footer .footer-mio .contactanos, footer .footer-mio .medios-pago, footer .footer-mio .redes-sociales {
+      font-size: 0%; } }
