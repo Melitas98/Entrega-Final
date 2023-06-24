@@ -23,174 +23,147 @@ body {
       color: violet; }
 
 /*Main*/
-main {
-  /* Quienes somos */
-  /*Pedidos*/
-  /* Media Query*/ }
-  main .carrusel {
-    display: flex;
-    margin-top: 1rem;
-    width: 100%;
-    object-fit: cover;
-    justify-content: center; }
-  main section .titulo-ig {
-    text-align: center;
-    background-color: #e988ff;
-    margin-top: 1%;
-    margin-bottom: 1%; }
-  main section .banner {
-    text-align: center;
-    margin-top: 1%;
-    margin-bottom: 1%; }
-  main .main-p .hp {
-    background-color: #e988ff;
-    width: 100%;
-    text-align: center;
-    margin-top: 1%; }
-  main .main-p .lista-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    justify-items: center;
-    margin-bottom: 1%; }
-    main .main-p .lista-productos .producto:hover {
-      color: #515152;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      border: 2px solid #515152;
-      border-radius: 5px;
-      padding: 5px; }
-      main .main-p .lista-productos .producto:hover img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px; }
-      main .main-p .lista-productos .producto:hover h2 {
-        margin-bottom: 5px; }
-      main .main-p .lista-productos .producto:hover p {
-        font-weight: bold; }
-    main .main-p .lista-productos .producto {
-      color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      border: 2px solid #000000;
-      border-radius: 5px;
-      padding: 5px; }
-      main .main-p .lista-productos .producto h2 {
-        text-align: center; }
-      main .main-p .lista-productos .producto p {
-        text-align: center; }
-  main .main-c {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, 0, 1fr);
-    grid-template-areas: "titulo-com" "como-comprar" "titulo-ped" "pedido-perso" "titulo-pre" "precio" "texto-c"; }
-    main .main-c .titulo-com {
-      grid-area: titulo-com;
-      text-align: center;
-      background-color: #e988ff;
-      margin-top: 1%; }
-    main .main-c .como-comprar {
-      grid-area: como-comprar; }
-    main .main-c div .titulo-ped {
-      grid-area: titulo-ped;
-      text-align: center;
-      background-color: #e988ff;
-      margin-top: 1%; }
-    main .main-c .pedido-perso {
-      grid-area: pedido-perso; }
-    main .main-c div .titulo-pre {
-      grid-area: titulo-pre;
-      text-align: center;
-      background-color: #e988ff;
-      margin-top: 1%; }
-    main .main-c .precio {
-      grid-area: precio; }
-    main .main-c .texto-c {
-      grid-area: texto-c;
-      justify-self: center;
-      align-self: center;
-      background-color: rgba(255, 255, 255, 0.527);
-      margin-bottom: 5px;
-      padding: 5px;
-      border-color: black;
-      border-style: dotted; }
-  main div .titulo-somos {
-    margin-top: 1%;
-    text-align: center;
-    background-color: #e988ff; }
-  main div .p {
+main .carrusel {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  object-fit: cover;
+  justify-content: center; }
+
+main section .titulo-ig {
+  text-align: center;
+  background-color: #e988ff;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+main section .banner {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+main .main-p .hp {
+  background-color: #e988ff;
+  width: 100%;
+  text-align: center;
+  margin-top: 1%; }
+
+main .main-p .lista-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin-bottom: 1%; }
+  main .main-p .lista-productos .producto:hover, main .main-p .lista-productos .producto:hover .producto:hover {
+    color: #515152; }
+    main .main-p .lista-productos .producto:hover img, main .main-p .lista-productos .producto:hover .producto:hover img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px; }
+    main .main-p .lista-productos .producto:hover h2, main .main-p .lista-productos .producto:hover .producto:hover h2 {
+      margin-bottom: 5px; }
+    main .main-p .lista-productos .producto:hover p, main .main-p .lista-productos .producto:hover .producto:hover p {
+      font-weight: bold; }
+  main .main-p .lista-productos .producto, main .main-p .lista-productos .producto:hover .producto:hover {
+    color: black;
     display: flex;
     flex-direction: column;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; }
-    main div .p .p-uno {
-      background-color: rgba(213, 223, 232, 0.356);
-      border-style: dotted;
-      border-color: #e988ff;
-      border-radius: 10px;
-      width: 50%;
-      justify-self: center;
-      align-self: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 5px; }
+    main .main-p .lista-productos .producto h2, main .main-p .lista-productos .producto:hover .producto:hover h2 {
       text-align: center; }
-    main div .p .p-dos {
-      background-color: rgba(80, 8, 91, 0.434);
-      border-style: dotted;
-      border-color: #e988ff;
-      border-radius: 10px; }
-  main .titulops {
-    margin-top: 1%;
+    main .main-p .lista-productos .producto p, main .main-p .lista-productos .producto:hover .producto:hover p {
+      text-align: center; }
+
+main .main-c {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 0, 1fr);
+  grid-template-areas: "titulo-com" "como-comprar" "titulo-ped" "pedido-perso" "titulo-pre" "precio" "texto-c"; }
+  main .main-c .titulo-com {
+    grid-area: titulo-com;
     text-align: center;
-    background-color: #e988ff; }
-  main .formulariop {
-    margin: auto;
+    background-color: #e988ff;
+    margin-top: 1%; }
+  main .main-c .como-comprar {
+    grid-area: como-comprar; }
+  main .main-c div .titulo-ped {
+    grid-area: titulo-ped;
     text-align: center;
-    background-color: #f0d1f4a3;
+    background-color: #e988ff;
+    margin-top: 1%; }
+  main .main-c .pedido-perso {
+    grid-area: pedido-perso; }
+  main .main-c div .titulo-pre {
+    grid-area: titulo-pre;
+    text-align: center;
+    background-color: #e988ff;
+    margin-top: 1%; }
+  main .main-c .precio {
+    grid-area: precio; }
+  main .main-c .texto-c {
+    grid-area: texto-c;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-color: black;
+    border-style: dotted; }
+
+main div .titulo-somos {
+  margin-top: 1%;
+  text-align: center;
+  background-color: #e988ff; }
+
+main div .p {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  main div .p .p-uno {
+    background-color: rgba(213, 223, 232, 0.356);
     border-style: dotted;
     border-color: #e988ff;
+    border-radius: 10px;
     width: 50%;
-    border-radius: 10px; }
-    main .formulariop fieldset div label {
-      display: inline-block;
-      width: 150px;
-      margin-bottom: 10px; }
-  main .titulodonde {
-    margin-top: auto;
-    text-align: center;
-    background-color: #e988ff; }
-  main .map {
+    justify-self: center;
+    align-self: center;
     text-align: center; }
-  @media screen and (min-width: 1024px) {
-    main .q-somos {
-      height: 500px; }
-    main .p-uno {
-      margin-top: 50px; }
-    main .p-dos {
-      margin-top: 50px; } }
-  @media screen and (max-width: 768px) {
-    main .carrusel {
-      display: inline; }
-    main .carrusel-uno {
-      width: 100%; }
-    main .carrusel-dos {
-      width: 100%; }
-    main .imagen-mobile {
-      width: 100%; }
-    main .main-p .lista-productos {
-      grid-template-columns: 1fr; } }
-  @media screen and (max-width: 600px) {
-    main .carrusel-uno {
-      width: 100%; }
-    main .carrusel-dos {
-      display: none; }
-    main .imagen-mobile {
-      width: 100%; }
-    main .main-p .lista-productos {
-      grid-template-columns: 1fr; } }
+  main div .p .p-dos {
+    background-color: rgba(80, 8, 91, 0.434);
+    border-style: dotted;
+    border-color: #e988ff;
+    border-radius: 10px; }
+
+main .titulops {
+  margin-top: 1%;
+  text-align: center;
+  background-color: #e988ff; }
+
+main .formulariop {
+  margin: auto;
+  text-align: center;
+  background-color: #f0d1f4a3;
+  border-style: dotted;
+  border-color: #e988ff;
+  width: 25%;
+  border-radius: 10px; }
+  main .formulariop fieldset div label {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 1%; }
+
+main .titulodonde {
+  margin-top: auto;
+  text-align: center;
+  background-color: #e988ff; }
+
+main .map {
+  text-align: center; }
 
 /* Footer */
 footer {
@@ -212,9 +185,10 @@ footer {
         text-align: start; }
     footer .footer-mio .medios-pago {
       grid-area: medios-pago;
-      justify-content: center;
       text-align: center;
       margin-top: 1fr; }
+      footer .footer-mio .medios-pago ul li {
+        text-align: start; }
     footer .footer-mio .redes-sociales {
       grid-area: redes-sociales;
       text-align: center;
@@ -231,3 +205,78 @@ footer {
     background-color: rgba(0, 0, 0, 0.461);
     text-align: center;
     margin-top: 0,1fr; }
+
+/* Media Query*/
+@media screen and (min-width: 1024px) {
+  main .q-somos {
+    height: 500px; }
+  main .p-uno {
+    margin-top: 50px; }
+  main .p-dos {
+    margin-top: 50px; } }
+
+@media screen and (max-width: 768px) {
+  main .carrusel {
+    display: inline-block; }
+  main .carrusel-uno {
+    width: 100%; }
+  main .carrusel-dos {
+    width: 100%; }
+  main .imagen-mobile {
+    width: 100%; }
+  main .main-p .lista-productos {
+    grid-template-columns: 1fr; }
+  main .formulariop {
+    margin: auto;
+    text-align: center;
+    background-color: #f0d1f4a3;
+    border-style: dotted;
+    border-color: #e988ff;
+    width: 40%;
+    border-radius: 10px; }
+  main .formulariop fieldset {
+    width: 100%; }
+  main .formulariop input[type="text"],
+  main .formulariop input[type="email"],
+  main .formulariop input[type="tel"] {
+    width: 100%;
+    font-size: 14px; }
+  main .map {
+    display: none; }
+  main .titulodonde {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  main .carrusel-uno {
+    width: 100%; }
+  main .carrusel-dos {
+    display: none; }
+  main .imagen-mobile {
+    width: 100%; }
+  main .main-p .lista-productos {
+    display: grid;
+    grid-template-columns: 1fr; }
+  main .formulariop {
+    margin: auto;
+    text-align: center;
+    background-color: #f0d1f4a3;
+    border-style: dotted;
+    border-color: #e988ff;
+    width: 40%;
+    border-radius: 10px; }
+  main .formulariop fieldset {
+    width: 100%; }
+  main .formulariop input[type="text"],
+  main .formulariop input[type="email"],
+  main .formulariop input[type="tel"] {
+    width: 100%;
+    font-size: 14px; }
+  main .map {
+    display: none; }
+  main .titulodonde {
+    display: none; }
+  footer {
+    width: 100%;
+    background-size: cover; }
+    footer .footer-mio .contactanos, footer .medios-pago, footer .redes-sociales {
+      width: fit-content; } }
